@@ -21,6 +21,8 @@ namespace de02
             LoadData();
             LoadLoaiSP();
             dataGridView1.CellClick += dataGridView1_CellClick;
+            
+
 
         }
 
@@ -162,6 +164,8 @@ namespace de02
             {
                 MessageBox.Show($"Lỗi khi thêm sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            // Logic sửa sản phẩm (như đã làm ở trên)
+            
         }
 
         // Hàm xóa trắng các điều khiển sau khi thêm sản phẩm
@@ -216,6 +220,8 @@ namespace de02
             {
                 MessageBox.Show($"Lỗi khi sửa sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            // Logic sửa sản phẩm (như đã làm ở trên)
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -262,6 +268,8 @@ namespace de02
             {
                 MessageBox.Show($"Lỗi khi xóa sản phẩm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            // Logic sửa sản phẩm (như đã làm ở trên)
+        
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -327,6 +335,8 @@ namespace de02
                 MessageBox.Show($"Lỗi khi tìm kiếm: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+     
+        
 
     }
 }
